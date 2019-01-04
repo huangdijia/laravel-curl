@@ -1,0 +1,38 @@
+{
+    "name": "huangdijia/laravel-curl",
+    "description": "curl for laravel",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "curl"
+    ],
+    "homepage": "https://github.com/huangdijia/laravel-curl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "huangdijia",
+            "email": "huangdijia@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*"
+    },
+    "autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Huangdijia\\Curl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Huangdijia\\Curl\\CurlServiceProvider"
+            ],
+            "aliases": {
+                "Curl": "Huangdijia\\Curl\\Facades\\Curl"
+            }
+        }
+    }
+}
